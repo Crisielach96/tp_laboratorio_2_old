@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Entidades
+namespace ClassLibrary1
 {
     public class Numero
     {
@@ -33,16 +29,18 @@ namespace Entidades
             this.numero = (this.ValidadNumero(numero));
         }
 
-        public Numero(){}
+        public Numero() { }
 
-        public Numero(double numero) : this(numero.ToString()) {}
+        public Numero(double numero) : this(numero.ToString()) { }
 
         public Numero(string numero)
         {
             SetNumero(numero);
         }
 
-        static string BinarioDeciemal(string binario)
+        #region No Anda
+        /*
+        public static string BinarioDeciemal(string binario)
         {
             double numero = 0;
             string mensaje = "";
@@ -66,11 +64,11 @@ namespace Entidades
             return mensaje;
         }
 
-        static public string BinarioDecimal(double numero)
+        static public string DecimalBinario(double numero)
         {
             string binario = "";
 
-            if(numero < 0)
+            if (numero < 0)
             {
                 return "Valor Invalido";
             }
@@ -96,12 +94,13 @@ namespace Entidades
             return "1" + binario;
         }
 
-        static public string BinarioDecimal(string numero)
+        static public string DecimalBinario(string numero)
         {
             double num = Convert.ToDouble(numero);
 
-            return BinarioDecimal(numero);
-        }
+            return DecimalBinario(numero);
+        }*/
+        #endregion
 
         public static double operator +(Numero n1, Numero n2)
         {

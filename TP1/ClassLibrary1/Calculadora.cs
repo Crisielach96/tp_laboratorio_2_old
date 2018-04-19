@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Entidades
+namespace ClassLibrary1
 {
     public class Calculadora
     {
-        static public double Operar(Numero n1, Numero n2, string operador)
+        public double Operar(Numero n1, Numero n2, string operador)
         {
-            switch(ValidarOperador(operador))
+            switch (ValidarOperador(operador))
             {
                 case "+":
                     return n1 + n2;
@@ -29,7 +27,7 @@ namespace Entidades
         {
             string retorno;
 
-            switch(operador)
+            switch (operador)
             {
                 case "+":
                     retorno = operador;
