@@ -28,87 +28,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnOperar = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnAdec = new System.Windows.Forms.Button();
+            this.btnABin = new System.Windows.Forms.Button();
+            this.txtIn = new System.Windows.Forms.TextBox();
+            this.cmbSelec = new System.Windows.Forms.ComboBox();
+            this.txtIn2 = new System.Windows.Forms.TextBox();
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOperar
             // 
-            this.button1.AccessibleName = "btnOperar";
-            this.button1.Location = new System.Drawing.Point(12, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Operar\r\n";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnOperar.AccessibleName = "btnOperar";
+            this.btnOperar.Location = new System.Drawing.Point(12, 79);
+            this.btnOperar.Name = "btnOperar";
+            this.btnOperar.Size = new System.Drawing.Size(110, 49);
+            this.btnOperar.TabIndex = 0;
+            this.btnOperar.Text = "Operar\r\n";
+            this.btnOperar.UseVisualStyleBackColor = true;
+            this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
             // 
-            // button2
+            // btnClear
             // 
-            this.button2.Location = new System.Drawing.Point(128, 40);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 49);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnClear.Location = new System.Drawing.Point(128, 79);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(110, 49);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "Limpiar";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // button3
+            // btnCerrar
             // 
-            this.button3.Location = new System.Drawing.Point(244, 40);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 49);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Cerrar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCerrar.Location = new System.Drawing.Point(244, 79);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(110, 49);
+            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
-            // button4
+            // btnAdec
             // 
-            this.button4.Location = new System.Drawing.Point(188, 94);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(166, 43);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Convertir a Decimal";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnAdec.Location = new System.Drawing.Point(188, 134);
+            this.btnAdec.Name = "btnAdec";
+            this.btnAdec.Size = new System.Drawing.Size(166, 43);
+            this.btnAdec.TabIndex = 3;
+            this.btnAdec.Text = "Convertir a Decimal";
+            this.btnAdec.UseVisualStyleBackColor = true;
+            this.btnAdec.Click += new System.EventHandler(this.btnAdec_Click);
             // 
-            // button5
+            // btnABin
             // 
-            this.button5.Location = new System.Drawing.Point(12, 94);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(170, 43);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Convertir a Binario";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnABin.Location = new System.Drawing.Point(12, 134);
+            this.btnABin.Name = "btnABin";
+            this.btnABin.Size = new System.Drawing.Size(170, 43);
+            this.btnABin.TabIndex = 4;
+            this.btnABin.Text = "Convertir a Binario";
+            this.btnABin.UseVisualStyleBackColor = true;
+            this.btnABin.Click += new System.EventHandler(this.btnABin_Click);
             // 
-            // textBox1
+            // txtIn
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 20);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIn.Location = new System.Drawing.Point(12, 53);
+            this.txtIn.Name = "txtIn";
+            this.txtIn.Size = new System.Drawing.Size(110, 20);
+            this.txtIn.TabIndex = 5;
+            this.txtIn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBox1
+            // cmbSelec
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(153, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(56, 21);
-            this.comboBox1.TabIndex = 6;
+            this.cmbSelec.Items.AddRange(new object[] {
+            "",
+            "+",
+            "-",
+            "*",
+            "/"});
+            this.cmbSelec.Location = new System.Drawing.Point(150, 52);
+            this.cmbSelec.Name = "cmbSelec";
+            this.cmbSelec.Size = new System.Drawing.Size(70, 21);
+            this.cmbSelec.TabIndex = 8;
             // 
-            // textBox2
+            // txtIn2
             // 
-            this.textBox2.Location = new System.Drawing.Point(245, 14);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(110, 20);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIn2.Location = new System.Drawing.Point(245, 52);
+            this.txtIn2.Name = "txtIn2";
+            this.txtIn2.Size = new System.Drawing.Size(110, 20);
+            this.txtIn2.TabIndex = 7;
+            this.txtIn2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblResult
+            // 
+            this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Location = new System.Drawing.Point(128, 9);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(227, 25);
+            this.lblResult.TabIndex = 0;
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // LaCalculadora
             // 
@@ -117,22 +136,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(367, 146);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(367, 189);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.txtIn2);
+            this.Controls.Add(this.cmbSelec);
+            this.Controls.Add(this.txtIn);
+            this.Controls.Add(this.btnABin);
+            this.Controls.Add(this.btnAdec);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnOperar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LaCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Cristian Sielach 2ºA";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,14 +159,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnOperar;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnAdec;
+        private System.Windows.Forms.Button btnABin;
+        private System.Windows.Forms.TextBox txtIn;
+        private System.Windows.Forms.ComboBox cmbSelec;
+        private System.Windows.Forms.TextBox txtIn2;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
